@@ -57,3 +57,7 @@ circles.forEach(elem=>{
     }
 })
 
+
+
+//mixup items//
+var mixer = mixitup('.portfolio-gallery');
