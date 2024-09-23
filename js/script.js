@@ -61,3 +61,30 @@ circles.forEach(elem=>{
 
 //mixup items//
 var mixer = mixitup('.portfolio-gallery');
+
+
+
+
+//active menu//
+let menu_List=document.querySelectorAll('header ul li a');
+let section=document.querySelectorAll('section');
+
+function activeMenu(){
+    let len=section.length;
+    while (--len && window.scrollY + 97< section[len].offsetTop){}
+    menu_List.forEach(sec=>sec.classList.remove("active"));
+    menu_List[len].classList.add("active");
+}
+
+activeMenu();
+window.addEventListener("scroll",activeMenu);
+
+
+
+
+//sticky navbar//
+
+
+
+
+
